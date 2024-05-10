@@ -32,7 +32,7 @@ def download_bag(bag_name, bag, download_dir):
     gdown.download_folder(id=id, output=str(download_path), quiet=False)
 
 if __name__ == "__main__":
-    console.rule("[bold cyan] NerfBridge Sample ROSBag Downloader")
+    console.rule("[bold cyan] SplatBridge Sample ROSBag Downloader")
     console.print("[bold cyan] Available ROSBags: ")
     total_size = 0
     for key, value in bags.items():

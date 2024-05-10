@@ -1,19 +1,19 @@
 [project]
-name = "nerfbridge"
+name = "splatbridge"
 version = "1.0"
 
 dependencies = [
-	"nerfstudio==1.0.2"
+	"nerfstudio==1.0.3"
 ]
 
 [tool.setuptools.packages.find]
-include = ["nerfbridge*"]
+include = ["splatbridge*"]
 
 [tool.pyright]
-extraPaths = ["nerfbridge"]
+extraPaths = ["splatbridge"]
 
 [project.entry-points.'nerfstudio.method_configs']
-ros-nerfacto = 'nerfbridge.method_configs:RosNerfacto'
-ros-depth-nerfacto = 'nerfbridge.method_configs:RosDepthNerfacto'
-ros-splatfacto = 'nerfbridge.method_configs:RosSplatfacto'
-ros-depth-splatfacto = 'nerfbridge.method_configs:RosDepthSplatfacto'
+ros-nerfacto = 'splatbridge.method_configs:RosNerfacto'
+ros-depth-nerfacto = 'splatbridge.method_configs:RosDepthNerfacto'
+ros-splatfacto = 'splatbridge.method_configs:RosSplatfacto'
+ros-depth-splatfacto = 'splatbridge.method_configs:RosDepthSplatfacto'
