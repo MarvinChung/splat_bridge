@@ -1,0 +1,1 @@
+ns-train ros-depth-nerfacto --data configs/desk.json --pipeline.datamanager.use-compressed-rgb True --pipeline.datamanager.dataparser.scene-scale-factor 0.5 --pipeline.datamanager.data-update-freq 8.0
